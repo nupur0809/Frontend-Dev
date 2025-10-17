@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Product Catalog - Online Store</title>
+</head>
+<body>
+  <h1>Product Catalog</h1>
+
+  <table border="1" cellpadding="8" cellspacing="0">
+    <caption><strong>Summer Collection - Product Catalog</strong></caption>
+
+    <!-- Table header -->
+    <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Availability</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Special announcement row using colspan across all columns -->
+      <tr>
+        <td colspan="4" style="text-align:center;">
+          <strong>Special Offer:</strong> Free shipping for orders over ₹1500!
+        </td>
+      </tr>
+
+      <!-- Product 1: image + name in first cell, description, price, availability -->
+      <tr>
+        <td>
+          <!-- Put product images in the same folder or update src to your path -->
+          <img src="product1.jpg" alt="Blue Cotton T-Shirt" width="120" height="120"><br>
+          <strong>Blue Cotton T-Shirt</strong>
+        </td>
+        <td>Soft 100% cotton tee, breathable fabric — ideal for daily wear.</td>
+        <td>₹699</td>
+        <td>In stock</td>
+      </tr>
+
+      <!-- Product 2: demonstrate rowspan (image spans two rows for two size variants) -->
+      <tr>
+        <td rowspan="2">
+          <img src="product2.jpg" alt="Running Shoes" width="120" height="120"><br>
+          <strong>Running Shoes</strong>
+        </td>
+        <td>Lightweight running shoe — variant: Men's (size 9)</td>
+        <td>₹3,499</td>
+        <td>Limited stock</td>
+      </tr>
+      <tr>
+        <!-- This row shares the same image cell as above using rowspan -->
+        <td>Lightweight running shoe — variant: Women's (size 7)</td>
+        <td>₹3,299</td>
+        <td>Preorder</td>
+      </tr>
+
+      <!-- Product 3: description spans price + availability with colspan (e.g., long description) -->
+      <tr>
+        <td>
+          <img src="product3.jpg" alt="Stainless Water Bottle" width="120" height="120"><br>
+          <strong>Stainless Water Bottle</strong>
+        </td>
+        <!-- Use colspan to allow a longer description cell that stretches across the Price column -->
+        <td colspan="2">500ml double-wall insulated bottle keeps drinks cold for 24h and hot for 12h. Leak-proof lid included.</td>
+        <td>Out of stock</td>
+      </tr>
+
+      <!-- Product 4: regular row -->
+      <tr>
+        <td>
+          <img src="product4.jpg" alt="Wireless Earbuds" width="120" height="120"><br>
+          <strong>Wireless Earbuds</strong>
+        </td>
+        <td>Bluetooth 5.2, 20-hour battery with charging case, in-ear comfort tips included.</td>
+        <td>₹2,199</td>
+        <td>In stock</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <p>
+    <em>Notes:</em> Replace <code>product1.jpg</code>, <code>product2.jpg</code>, etc. with your real image filenames
+    (place them in the same folder as this HTML file) or use full/relative URLs.
+  </p>
+</body>
+</html>
