@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quotations Example</title>
+</head>
+<body>
+  <h1>Quotations Example</h1>
+
+  <p>
+    My teacher once said, <q>Hard work always pays off &amp; builds character.</q>
+  </p>
+
+  <blockquote>
+    “Success is not final, failure is not fatal: it is the courage to continue that counts.”  
+    — Winston Churchill
+  </blockquote>
+</body>
+</html>
