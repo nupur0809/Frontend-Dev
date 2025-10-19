@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Complete Webpage Layout</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  background: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 1000;
+}
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url("https://via.placeholder.com/1200x500") center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3em;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+/* ABOUT SECTION */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 10%;
+  gap: 30px;
+}
+.about img {
+  width: 300px;
+  border-radius: 10px;
+}
+.about-text {
+  flex: 1;
+}
+
+/* SERVICES SECTION */
+.services {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  padding: 50px 10%;
+  text-align: center;
+}
+.service-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.service {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: transform 0.3s;
+}
+.service:hover {
+  transform: scale(1.05);
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 50px 10%;
+  background: #f8f9fa;
+}
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+input:focus, textarea:focus {
+  border-color: #007bff;
+}
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .about {
+    flex-direction: column;
+  }
+  .service-boxes {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>My Website</h2>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="hero" class="hero">
+  <h1>Welcome to Our Website</h1>
+</section>
+
+<section id="about" class="about">
+  <img src="https://via.placeholder.com/300" alt="About us" />
+  <div class="about-text">
+    <h2>About Us</h2>
+    <p>
+      We are a passionate team dedicated to delivering high-quality web solutions.
+      Our mission is to help clients build strong online presence through modern design and efficient development.
+    </p>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="service-boxes">
+    <div class="service"><h3>Web Design</h3><p>Clean, responsive, and modern designs for your website.</p></div>
+    <div class="service"><h3>Development</h3><p>Robust backend and frontend development for businesses.</p></div>
+    <div class="service"><h3>SEO</h3><p>Optimize your website to rank higher in search results.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Name" required />
+    <input type="email" placeholder="Email" required />
+    <textarea rows="4" placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 My Website | All Rights Reserved
+</footer>
+
+</body>
+</html>

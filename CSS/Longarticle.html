@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Article Styling</title>
+<style>
+article {
+  max-width: 700px;
+  margin: 40px auto;
+  line-height: 1.6;
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+article::first-letter {
+  font-size: 3em;
+  font-weight: bold;
+  color: #007bff;
+}
+article::first-line {
+  font-weight: bold;
+}
+blockquote {
+  background: #f1f1f1;
+  border-left: 5px solid #007bff;
+  margin: 20px 0;
+  padding: 15px;
+  font-style: italic;
+}
+mark {
+  background: yellow;
+}
+</style>
+</head>
+<body>
+<article>
+  Once upon a time in a <mark>quiet village</mark>, people lived in peace and harmony.
+  The <mark>river that flowed</mark> beside their homes was their source of joy and survival.
+  <blockquote>
+    “Peace comes not from the absence of conflict, but from the ability to cope with it.”
+  </blockquote>
+  The story reminds us to find happiness in small things and stay strong through adversity.
+</article>
+</body>
+</html>
