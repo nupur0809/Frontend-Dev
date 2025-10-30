@@ -1,0 +1,13 @@
+/* Task7 - Loading animation */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{display:flex;align-items:center;justify-content:center;background:#0b0f1a}
+.loader{display:flex;gap:12px;align-items:flex-end}
+.dot{width:14px;height:14px;border-radius:50%;background:#fff;animation:jump .8s ease-in-out infinite}
+.dot:nth-child(1){animation-delay:0s}
+.dot:nth-child(2){animation-delay:.12s}
+.dot:nth-child(3){animation-delay:.24s}
+@keyframes jump{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-18px)}
+}

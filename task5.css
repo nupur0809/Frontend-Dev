@@ -1,0 +1,15 @@
+/* Task5 - Pricing */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;background:#fafbff;display:flex;align-items:center;justify-content:center;height:100vh;padding:24px}
+.pricing{display:flex;gap:20px;align-items:flex-start;animation:fadeIn .6s ease both}
+.card{width:260px;padding:20px;border-radius:10px;background:#fff;box-shadow:0 8px 20px rgba(0,0,0,.06);text-align:center;transition:transform .3s}
+.card:hover{transform:translateY(-10px)}
+.featured{transform:scale(1.04);background:#f0f8ff;border:2px solid #0b76d1}
+.price{font-weight:800;font-size:1.4rem;margin:12px 0}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* stack vertically below 750px */
+@media (max-width:750px){
+  .pricing{flex-direction:column;align-items:center}
+  .card{width:320px}
+}

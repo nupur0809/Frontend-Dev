@@ -1,0 +1,19 @@
+/* Task1 - Portfolio */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Arial;background:#f7f8fb;color:#111;min-height:100vh;display:flex;flex-direction:column;}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:#0b76d1;color:#fff;}
+.site-header .nav a{color:#fff;margin-left:14px;text-decoration:none;font-weight:600;}
+.main{flex:1;display:flex;gap:20px;align-items:center;justify-content:center;padding:32px;max-width:1100px;margin:0 auto;}
+.about{flex:1;min-width:260px;}
+.photo{width:300px;display:flex;justify-content:center;}
+.photo img{width:100%;height:auto;border-radius:8px;display:block;}
+
+/* footer centered */
+.site-footer{text-align:center;padding:12px;background:#0b76d1;color:white}
+
+/* Responsive stack below 700px */
+@media (max-width:700px){
+  .main{flex-direction:column;align-items:center;text-align:center;padding:20px;}
+  .site-header{flex-direction:column;gap:10px;align-items:flex-start;}
+  .site-header .nav{align-self:flex-end;}
+}

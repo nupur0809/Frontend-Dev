@@ -1,0 +1,15 @@
+/* Task6 - Blog Grid */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;background:#f7f8fb;padding:20px}
+.site-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.layout{display:grid;grid-template-columns:240px 1fr;grid-template-areas:"sidebar main" "sidebar footer";gap:16px}
+.sidebar{grid-area:sidebar;background:#fff;padding:16px;border-radius:8px}
+.content{grid-area:main;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.post{background:#fff;padding:16px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.04)}
+.site-footer{grid-area:footer;background:#222;color:#fff;padding:12px;border-radius:8px;}
+
+/* below 800px move sidebar below main */
+@media (max-width:800px){
+  .layout{grid-template-columns:1fr;grid-template-areas:"main" "sidebar" "footer"}
+  .content{grid-template-columns:1fr}
+}
