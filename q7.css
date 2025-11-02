@@ -1,0 +1,75 @@
+/* General Page Style */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f0f8ff; /* light blue */
+  color: #000;
+  text-align: center;
+}
+
+header {
+  background-color: #003366; /* dark blue */
+  color: white;
+  padding: 15px;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* Article Section */
+article {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #003366;
+  text-align: left;
+}
+
+/* Heading Styles */
+h2 {
+  color: #003366;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+p {
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  font-size: 1.1em;
+}
+
+/* Highlight Elements */
+mark {
+  background-color: #ffcccc;
+  color: #000;
+}
+
+strong {
+  color: red;
+}
+
+em {
+  color: #003366;
+  font-style: italic;
+}
+
+/* Pseudo-elements */
+p::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: red;
+}
+
+p::first-line {
+  color: #003366;
+  font-weight: 600;
+}

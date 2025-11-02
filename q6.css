@@ -1,0 +1,67 @@
+/* General Page Style */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* light blue */
+  color: #000;
+  text-align: center;
+}
+
+header {
+  background-color: #003366; /* dark blue */
+  color: white;
+  padding: 15px;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* Flexbox Layout */
+.transform-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 40px;
+}
+
+/* Common Box Style */
+.transform-box {
+  background-color: white;
+  border: 3px solid #003366;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #003366;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+/* Individual Transformations */
+.rotate:hover {
+  transform: rotate(45deg);
+  border-color: red;
+}
+
+.scale:hover {
+  transform: scale(1.3);
+  border-color: red;
+}
+
+.translate:hover {
+  transform: translate(30px, -20px);
+  border-color: red;
+}
+
+.skew:hover {
+  transform: skew(15deg, 10deg);
+  border-color: red;
+}

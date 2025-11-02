@@ -1,0 +1,51 @@
+/* General Page Style */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #000;
+  text-align: center;
+}
+
+/* Fixed Header and Footer */
+header, footer {
+  background-color: #003366; /* dark blue */
+  color: white;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* Main Section Area */
+main {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+/* Linear Gradient Section */
+.linear {
+  background: linear-gradient(to right, #cce6ff, #003366);
+  color: black;
+  padding: 80px 20px;
+}
+
+/* Radial Gradient Section */
+.radial {
+  background: radial-gradient(circle, white, red);
+  color: black;
+  padding: 80px 20px;
+  background-attachment: fixed; /* parallax-like effect */
+}
+
+/* Section Headings */
+h2 {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,70 @@
+/* Page Style */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* light blue */
+  color: #000;
+  text-align: center;
+}
+
+header {
+  background-color: #003366; /* dark blue */
+  color: white;
+  padding: 15px;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* Flexbox Centering */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  height: 80vh;
+}
+
+/* Box Styles */
+.box {
+  background-color: white;
+  border: 3px solid #000;
+  border-radius: 8px;
+  color: #003366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: auto;
+}
+
+/* Different Sizes */
+.box1 {
+  width: 200px;
+  height: 150px;
+  background-color: #e6f0ff;
+}
+
+.box2 {
+  width: 20vw;
+  height: 15vh;
+  font-size: 1.2em;
+  background-color: #ffcccc;
+}
+
+.box3 {
+  min-height: 100px;
+  max-width: 250px;
+  background-color: #d9f2d9;
+}
+
+/* Hover Effect */
+.box:hover {
+  border-color: red;
+  transition: border-color 0.3s ease;
+}

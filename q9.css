@@ -1,0 +1,89 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e6f2ff; /* light blue */
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #003366; /* dark blue */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+/* Form Styling */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.styled-form {
+  background-color: white;
+  padding: 30px;
+  border: 3px solid #003366;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: left;
+  color: #003366;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+/* Focus Effects */
+input:focus,
+textarea:focus {
+  border-color: red;
+  outline: 2px solid #003366;
+  outline-offset: 3px;
+  background-color: #f0f8ff; /* very light blue */
+}
+
+/* Button Styling */
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #003366;
+  color: white;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: red;
+}
