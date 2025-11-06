@@ -1,0 +1,52 @@
+/* Reset & base styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; background: #f6f8fb; color: #0b1220; }
+header, footer { text-align: center; padding: 1rem; }
+h1 { margin: 0 0 0.5rem; }
+
+/* Layout examples side by side */
+main { display: flex; justify-content: center; padding: 1rem; }
+.examples { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
+.example { background: #fff; padding: 1rem; border-radius: 10px; box-shadow: 0 6px 18px rgba(2,6,23,0.08); width: 260px; }
+.example h2 { margin: 0.2rem 0; font-size: 1rem; }
+.example p { margin: 0.2rem 0 1rem; color: #617486; font-size: 0.9rem; }
+
+/* Link hover effect */
+.example.link a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  background: #eef4ff;
+  color: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.example.link a:hover { background: #2563eb; color: #fff; transform: translateY(-2px); }
+
+/* Button focus and active */
+.example.button button {
+  padding: 0.6rem 0.85rem;
+  border-radius: 8px;
+  border: 2px solid #e6eefc;
+  background: linear-gradient(#fff, #f3f8ff);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.example.button button:focus { outline: 3px solid rgba(37,99,235,0.2); transform: translateY(-2px); }
+.example.button button:active { transform: translateY(1px); box-shadow: inset 0 2px 6px rgba(0,0,0,0.06); }
+
+/* List item nth-child */
+.example.list ul { list-style: none; padding: 0; margin: 0; }
+.example.list li {
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+.example.list li:nth-child(odd) { background: #fff; }
+.example.list li:nth-child(even) { background: #f3f6fb; }
+
+/* Responsive: stack vertically on smaller screens */
+@media (max-width: 700px) {
+  .examples { flex-direction: column; align-items: stretch; }
+}

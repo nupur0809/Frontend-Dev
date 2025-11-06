@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f8fb;
+  color: #0b1220;
+  text-align: center;
+  padding: 1rem;
+}
+
+header, footer { margin-bottom: 1rem; }
+
+/* Button container */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+/* Base button style */
+button {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Primary button */
+button.primary {
+  background: #2563eb;
+  color: #fff;
+}
+button.primary:hover { background: #1e40af; transform: translateY(-2px); }
+button.primary:active { transform: translateY(1px); }
+
+/* Secondary button */
+button.secondary {
+  background: #e0f2fe;
+  color: #2563eb;
+}
+button.secondary:hover { background: #bae6fd; }
+
+/* Outline button */
+button.outline {
+  background: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+button.outline:hover { background: #2563eb; color: #fff; }
+
+/* Disabled button */
+button.disabled {
+  background: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+button:focus { outline: 3px solid rgba(37,99,235,0.3); }

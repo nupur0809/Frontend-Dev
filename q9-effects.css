@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f8fb;
+  text-align: center;
+  padding: 1rem;
+}
+
+header, footer { margin-bottom: 1rem; }
+
+.effects {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.effect-btn {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.effect-btn:hover {
+  transform: scale(1.1);
+  background: #1e40af;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.effect-btn:focus {
+  outline: 3px solid rgba(37,99,235,0.3);
+}

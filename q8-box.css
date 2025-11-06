@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f8fb;
+  text-align: center;
+  padding: 1rem;
+}
+
+header, footer { margin-bottom: 1rem; }
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 150px;
+  padding: 20px;
+  border: 5px solid #2563eb;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* Apply border-box */
+.border-box { box-sizing: border-box; }
+
+.content-box { box-sizing: content-box; }

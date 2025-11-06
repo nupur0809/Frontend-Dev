@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f8fb;
+  color: #0b1220;
+  padding: 1rem;
+}
+
+header, footer { text-align: center; margin-bottom: 1rem; }
+
+p { margin: 0.5rem 0; padding: 0.5rem; }
+
+/* Class selector */
+.class-example { background: #e0f2fe; }
+
+/* ID selector */
+#id-example { background: #fef3c7; }
+
+/* Attribute selector */
+[title] { background: #fde2e2; }
+
+/* Combinators */
+.combinators p + p { color: #2563eb; font-weight: bold; } /* adjacent sibling */
+.combinators span { display: block; margin-top: 0.5rem; background: #d1fae5; }
+
+/* Element selector */
+ul li { padding: 0.4rem; border-bottom: 1px solid #cbd5e1; }
