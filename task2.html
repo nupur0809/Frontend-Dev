@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        margin:0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f5f5f5;
+      }
+      header,footer{
+        background-color: #333;
+        color:white;
+        padding:15px 30px;
+      }
+      header{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+      }
+      .logo{
+        font-size:1.5em;
+        font-weight:bold;
+      }
+      nav a{
+        color:white;
+        margin-left: 20px;
+        font-size:1em;
+      }
+      nav a:hover{
+        text-decoration:underline;
+      }
+      main{
+        display:flex;
+        justify-content: space-around;
+        align-items: strech;
+        padding:40px 20px;
+        gap:20px;
+      }
+      .feature {
+      background-color: white;
+      flex: 1; /* equal width boxes */
+      min-width: 200px;
+      text-align: center;
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease; /* smooth scaling */
+    }
+
+    .feature:hover {
+      transform: scale(1.05);
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      text-align: center;
+    }
+
+    /* ---------- Responsive below 750px ---------- */
+    @media (max-width: 750px) {
+      main {
+        flex-direction: column; /* stack vertically */
+        align-items: center;
+      }
+
+      .feature {
+        width: 80%;
+      }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">My Logo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="feature">feature 1</div>
+        <div class="feature">feature 2</div>
+        <div class="feature">feature 3</div>
+    </main>
+    <footer>
+         © 2025 MyWebsite. All rights reserved.
+    </footer>
+    
+</body>
+</html>

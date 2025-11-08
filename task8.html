@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Principles</title>
+  <link rel="stylesheet" href="task8.css">
+</head>
+<body>
+
+  <h1 class="title">Responsive Design Principles</h1>
+
+  <section class="grid-container">
+    <!-- Box 1 -->
+    <div class="box">
+      <h2>Fluid Layouts</h2>
+      <p>Use percentage-based widths to make elements resize smoothly with the viewport.</p>
+      <pre><code>container { width: 80%; }</code></pre>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="box">
+      <h2>Flexible Media</h2>
+      <p>Ensure images and videos scale with their container instead of overflowing.</p>
+      <pre><code>img { max-width: 100%; height: auto; }</code></pre>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="box">
+      <h2>Breakpoints</h2>
+      <p>Use media queries to adjust layout or style for specific screen sizes.</p>
+      <pre><code>@media (max-width: 600px) { ... }</code></pre>
+    </div>
+  </section>
+
+</body>
+</html>

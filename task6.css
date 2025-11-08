@@ -1,0 +1,153 @@
+/* General Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header using Flexbox */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0078d7;
+  color: white;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Main Grid Layout */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sections styling */
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Section Headings */
+section h2 {
+  color: #0078d7;
+  margin-bottom: 15px;
+}
+
+/* Image Gallery */
+.gallery-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-container img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.gallery-container img:hover {
+  filter: none; /* Removes grayscale on hover */
+}
+
+/* Cheat Sheet List */
+.cheatsheet ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cheatsheet li {
+  margin-bottom: 8px;
+}
+
+.cheatsheet code {
+  background-color: #f0f0f0;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer styling */
+.footer {
+  background: #0078d7;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr; /* Stack all vertically */
+    padding: 20px;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  .gallery-container img {
+    max-width: 90%;
+  }
+}

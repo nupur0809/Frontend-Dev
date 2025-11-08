@@ -1,0 +1,88 @@
+/* Basic styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Page Title */
+.title {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Card styling */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+.card h2 {
+  color: #0078d7;
+  margin-bottom: 10px;
+}
+
+/* Paragraph text */
+.card p {
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+  line-height: 1.6;
+}
+
+/* Code text styling */
+code {
+  background-color: #f0f0f0;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* Responsive stacking below 700px */
+@media (max-width: 700px) {
+  body {
+    padding: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack boxes vertically */
+  }
+
+  .card {
+    text-align: left;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+    color: #111;
+  }
+
+  .card p {
+    margin-top: 5px;
+    line-height: 1.8;
+  }
+}

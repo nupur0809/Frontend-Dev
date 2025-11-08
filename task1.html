@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Filter Gallery</title>
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 17px;
+      justify-items: center;
+      align-items: center;
+      height: 100vh;
+      background-color: grey;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    @media (max-width: 600px) {
+      body {
+        grid-template-columns: 1fr; /* Only 1 column */
+        justify-items: center;
+      }
+    }
+
+    .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: filter 0.4s ease, transform 0.4s ease;
+    }
+
+    /* 🎨 Apply different filters to each image */
+    .img1 img { filter: blur(3px); }
+    .img2 img { filter: grayscale(100%); }
+    .img3 img { filter: sepia(100%); }
+    .img4 img { filter: brightness(0.6); }
+    .img5 img { filter: contrast(180%); }
+    .img6 img { filter: hue-rotate(120deg); }
+
+    /* 🌟 On hover — remove filter smoothly and zoom a bit */
+    .box img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="box img1"><img src="Parrot.png" alt="Blur Filter"></div>
+  <div class="box img2"><img src="Parrot.png" alt="Grayscale Filter"></div>
+  <div class="box img3"><img src="Parrot.png" alt="Sepia Filter"></div>
+  <div class="box img4"><img src="Parrot.png" alt="Brightness Filter"></div>
+  <div class="box img5"><img src="Parrot.png" alt="Contrast Filter"></div>
+  <div class="box img6"><img src="Parrot.png" alt="Hue Rotate Filter"></div>
+</body>
+</html>

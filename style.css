@@ -1,0 +1,46 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Section styling */
+.text-section {
+  text-align: center;
+  max-width: 700px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive heading using clamp() */
+h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Responsive paragraph using clamp() */
+p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Adjust readability on smaller screens */
+@media (max-width: 700px) {
+  .text-section {
+    padding: 25px;
+  }
+
+  p {
+    line-height: 1.8;      /* more space between lines */
+    letter-spacing: 0.5px; /* slightly spaced letters */
+  }
+}
